@@ -5,7 +5,7 @@ This is a starter boilerplate to start your symfony project with:
 - Nginx 1.22.0
 - PHP 8.0
 - xDebug 3
-- Symfony 5
+- Symfony 6.0.12
 - MySQL 8.0
 
 Just [download](https://www.docker.com/products/docker-desktop/) and install docker on your os and start the docker containers with
