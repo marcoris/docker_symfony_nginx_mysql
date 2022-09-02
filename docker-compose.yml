@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 networks:
   nginx-php74-mysql8:
@@ -30,7 +30,7 @@ services:
       - nginx-php74-mysql8
 
   mysql8-service:
-    image: mysql:8
+    image: mysql:8.0
     container_name: mysql8-container
     ports:
       - "3306:3306"
