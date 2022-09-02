@@ -22,10 +22,15 @@ services:
     build:
       context: ./php
     container_name: php
+    extra_hosts:
+      - host.docker.local:host-gateway
     ports:
       - "9000:9000"
     volumes:
       - ./app:/var/www/project
+      - ./php/ini/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./php/ini/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+
     networks:
       - nginx-php8-mysql8
 
