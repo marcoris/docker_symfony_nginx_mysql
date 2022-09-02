@@ -1,1 +1,2 @@
-# docker_symfony_nginx_mysql
+# nginx php7.4 mysql8 docker network
+Fast lightweight Docker network using PHP MySQL Nginx and symfony.
