@@ -14,7 +14,16 @@ Just [download](https://www.docker.com/products/docker-desktop/) and install doc
 ## First project installation
 Install a new symfony project with following command:
 ```bash
-cd install && sh install.sh && cd .. && rm -rf install
+docker compose up -d --build \
+  && rm -rf ../app \
+  && mkdir ../app
+```
+```bash
+docker compose run --rm php8-service symfony new .
+```
+
+```bash
+docker compose run --rm php8-service composer require doctrine
 ```
 
 When the containers are up and running go and checkout [localhost:8080](http://localhost:8080).
